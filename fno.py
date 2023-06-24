@@ -35,9 +35,9 @@ while i<= max:
                 i+=1
             break
         if b[0]>0:
-            buy.append([ws[f'B{i-2}'].value,b[0],b[1]])
+            buy.append([ws[f'B{i}'].value,b[0],b[1]])
         if s[0]>0:
-            sell.append([ws[f'B{i-2}'].value,s[0],s[1]])
+            sell.append([ws[f'B{i}'].value,s[0],s[1]])
         b = [0, 0]
         s = [0, 0]
     i+=1
@@ -48,6 +48,7 @@ sell.pop(0)
 
 print(buy)
 print(sell)
+print(stt)
 
 # x='N'
 #
