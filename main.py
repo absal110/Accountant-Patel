@@ -4,7 +4,7 @@ import time
 
 fName = "NQ2023078"
 
-wb = load_workbook(rf'D:\SSTallyentrymaterial\Data\{fName}.xlsx')
+wb = load_workbook(rf'D:\SSTallyentrymaterial\data\{fName}.xlsx')
 ws = wb.active
 max = ws.max_row
 
