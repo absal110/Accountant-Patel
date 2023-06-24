@@ -10,6 +10,8 @@ i = 7
 sharesSaved = []
 while ws[f"K{i}"].value!=None:
     shareName = ws[f"K{i}"].value.split("-")
+    shareName[0].replace(" ", "")
+    shareName[0].upper()
     sharesSaved.append(shareName[0].strip())
     i+=1
 # print(sharesSaved)
