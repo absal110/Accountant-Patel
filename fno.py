@@ -45,6 +45,9 @@ while i<= max:
 buy.pop(0)
 sell.pop(0)
 
+print(buy)
+print(sell)
+
 # x='N'
 #
 # if buy:
