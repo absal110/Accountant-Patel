@@ -80,6 +80,7 @@ if dueToUs<0:
     dueToUs=dueToUs*-1
 filekaname = ws["A2"].value
 billDate = filekaname[-10:]
+filekaname = filekaname.upper()
 
 print(shares)
 
