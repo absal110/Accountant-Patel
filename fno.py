@@ -2,9 +2,9 @@ from openpyxl import load_workbook
 import pyautogui
 import time
 
-fName = "NQ2023078"
+fName = "01.06.2022"
 
-wb = load_workbook(rf'D:\SSTallyentrymaterial\Data\{fName}.xlsx')
+wb = load_workbook(rf'D:\SSTallyentrymaterial\fno\{fName}.xlsx')
 ws = wb.active
 max = ws.max_row
 
