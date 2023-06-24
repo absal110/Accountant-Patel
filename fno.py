@@ -48,6 +48,7 @@ sell.pop(0)
 
 print(buy)
 print(sell)
+stt = ("%.2f" % stt)
 
 x='N'
 
@@ -84,6 +85,7 @@ print(shares)
 
 # print(billDate)
 print(dueToUs,stt)
+print(filekaname,billDate)
 
 suffix = input("Enter Suffix if any or press 'ENTER'\n")
 
