@@ -102,6 +102,9 @@ pyautogui.press('f2')
 pyautogui.typewrite(billDate)
 pyautogui.press('enter')
 
+if x=='Y':
+    input("Enter DUeToUs to proceed\n Then press ENter to Continue SAle\n")
+
 if x!='Y':
     pyautogui.typewrite("SHARE PURCHASE")
     pyautogui.press('enter')
@@ -136,12 +139,16 @@ if sell:
         pyautogui.typewrite(str(each[2]))
         pyautogui.press('enter')
     pyautogui.press('enter')
-    pyautogui.press('enter')
-    pyautogui.typewrite("BP")
-    pyautogui.press('enter')
-    pyautogui.typewrite(str(dueToUs))
-    pyautogui.press('enter')
-    pyautogui.press('enter')
+    if x!='Y':
+        pyautogui.press('enter')
+        pyautogui.typewrite("BP")
+        pyautogui.press('enter')
+        pyautogui.typewrite(str(dueToUs))
+        pyautogui.press('enter')
+        pyautogui.press('enter')
+    else:
+        pyautogui.typewrite("BY")
+        pyautogui.press('enter')
     pyautogui.typewrite("STT")
     pyautogui.press('enter')
     pyautogui.typewrite(str(stt))
