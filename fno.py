@@ -54,7 +54,7 @@ x='N'
 if buy:
     for each in buy:
         a = each[0].split()
-        each[0] = a[:1]
+        each[0] = a[0]+" "+a[1]
 else:
     while 1:
         x = input("No purchase plese press Y")
@@ -63,7 +63,7 @@ else:
 
 for each in sell:
     a = each[0].split()
-    each[0] = a[:2]
+    each[0] = a[0] + " " + a[1]
 
 shares = []
 for each in buy:
