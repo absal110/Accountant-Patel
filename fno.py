@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 import pyautogui
 import time
 
-fName = "01.06.2022"
+fName = "04.05.2022"
 
 wb = load_workbook(rf'D:\SSTallyentrymaterial\fno\{fName}.xlsx')
 ws = wb.active
@@ -148,11 +148,7 @@ if sell:
     pyautogui.press('enter')
     pyautogui.typewrite(str(stt))
     pyautogui.press('enter')
-    pyautogui.press('enter')
-    pyautogui.typewrite("R")
-    pyautogui.press('enter')
-    pyautogui.press('enter')
-    pyautogui.typewrite(fName)
+    pyautogui.typewrite(filekaname)
     pyautogui.press('enter')
     time.sleep(0.75)
     pyautogui.press('enter')
