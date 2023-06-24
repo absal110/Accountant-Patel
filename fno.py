@@ -78,7 +78,7 @@ for each in sell:
 dueToUs = ws[f'H{max}'].value
 if dueToUs<0:
     dueToUs=dueToUs*-1
-filekaname = ws["A3"].value
+filekaname = ws["A2"].value
 billDate = filekaname[-10:]
 
 print(shares)
