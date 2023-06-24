@@ -48,7 +48,6 @@ sell.pop(0)
 
 print(buy)
 print(sell)
-print(stt)
 
 x='N'
 
@@ -64,7 +63,7 @@ else:
 
 for each in sell:
     a = each[0].split()
-    each[0] = a[:1]
+    each[0] = a[:2]
 
 shares = []
 for each in buy:
