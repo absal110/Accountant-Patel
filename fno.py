@@ -32,6 +32,7 @@ while i<= max:
         else:
             while ws[f'H{i}'].value != None:
                 stt +=ws[f'H{i}'].value
+                i+=1
             break
         if b[0]>0:
             buy.append([ws[f'B{i-2}'].value,b[0],b[1]])
