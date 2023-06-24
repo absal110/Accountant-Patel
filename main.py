@@ -124,6 +124,12 @@ if x!='Y':
     pyautogui.press('enter')
 
 if sell:
+    if x=='Y':
+        pyautogui.keyDown('alt')
+        time.sleep(0.25)
+        pyautogui.press('tab')
+        pyautogui.keyUp('alt')
+        time.sleep(0.5)
     pyautogui.typewrite("SHARE SALE")
     pyautogui.press('enter')
 
